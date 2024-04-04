@@ -12,3 +12,9 @@ app.listen(env.port, () => {
 
 // ...
 // Sigterm handling only
+
+process.on('SIGTERM', () => {
+    console.log('The service is about to shut down! (not really)');
+    //server.closeAllConnections();
+    
+    });
