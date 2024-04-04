@@ -1,6 +1,6 @@
 const env = require('./env');
 // ...
-const delayMs = 1;
+//const delayMs = 1;
 // Helper function for the "Service Autoscaling" section.
 const delay = delayMs => {
   return new Promise(resolve => {
@@ -32,7 +32,7 @@ const processor = async () => {
                 QueueUrl: process.env.COPILOT_QUEUE_URI,
                 WaitTimeSeconds: 20,
     }));
-
+    delay;
     //console.log(`results: ${JSON.stringify(out)}`);
 
     if (out.Messages === undefined || out.Messages.length === 0) {
