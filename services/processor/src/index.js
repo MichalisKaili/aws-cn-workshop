@@ -36,7 +36,7 @@ const processor = async () => {
 
     if (out.Messages === undefined || out.Messages.length === 0) {
       console.log("Message is empty")
-      return; //maybe this should be continue
+      continue; //not sure if this should be return
     }
     // TODO 3: Process messages (if any).
     //
