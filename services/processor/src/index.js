@@ -1,5 +1,6 @@
 const env = require('./env');
 // ...
+const delayMs = 1;
 // Helper function for the "Service Autoscaling" section.
 const delay = delayMs => {
   return new Promise(resolve => {
